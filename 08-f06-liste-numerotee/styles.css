@@ -1,0 +1,47 @@
+/* reset */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* deco */
+
+body {
+  background: #fff;
+  color: #333;
+  font-size: 1.6em;
+  line-height: 1.5;
+  font-family: arial, sans-serif;
+}
+.numbered {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+.numbered > li {
+  margin-bottom: 2rem;
+}
+p {
+  margin: 0;
+}
+
+
+/* Partie 1 */
+/*
+1- Supprimez les puces numérotées
+2- Donnez une taille de 48% à chaque li et placez-les les uns à côté des autres, par 2 et avec une gouttière
+*/
+
+
+
+/* Partie 2 : Compteur */
+/*
+1- Créez un compteur en CSS. Il s'incrémentera à chaque li contenu dans .numbered
+2- Affichez la valeur du compteur (le chiffre) devant chaque li
+3- Les styles du chiffre seront : margin-right: 2rem; color: orange; line-height: 1; font-size: 6rem;
+4- Placez le chiffre à gauche du contenu du li
+*/
