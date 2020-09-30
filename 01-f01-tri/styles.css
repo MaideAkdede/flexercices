@@ -40,8 +40,9 @@ h1 {
 
 div {
   width: 80%;
+  display: flex;
+  flex-direction: column;
 }
-
 a {
   display: block;
   margin-top: 6px;
@@ -50,4 +51,35 @@ a {
   text-decoration: none;
   background: #999;
 }
+a[href$='.doc']{
+  background-color: orange;
+  order: -1;
+}
+a[href$='.xls']{
+  background-color: olivedrab;
+  transform: translateY(1.5em);
+}
+a[href$='.pdf']{
+  background-color: hotpink ;
+  order: 1;
+  transform: translateY(3em);
+}
 
+/* -------- MAXIBONUS -------- */
+
+*:before{
+  color: rgba(360, 360, 360, 0.5);
+  text-transform: lowercase;
+  font-size: 0.65em;
+  margin-right: 1em;
+}
+
+a[href$='.pdf']:before{
+  content: "PDF";
+}
+a[href$='.doc']:before{
+  content: "DOC";
+}
+a[href$='.xls']:before{
+  content: "XLS";
+}
